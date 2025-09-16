@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adorable Red Panda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the World of Red Pandas</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#fun">Interactive Fun</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Red Pandas</h2>
+    <p>The red panda is a small mammal native to the eastern Himalayas and southwestern China. They are known for their reddish-brown fur, long, shaggy tail, and waddling walk.</p>
+    <img src="skate.jpeg" alt="Red Panda">
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="2RP.jpg" alt="Red Panda 1">
+      <img src="aegyo.jpg" alt="Red Panda 2">
+      <img src="kyah.jpg" alt="Red Panda 3">
+  </section>
+
+  <section id="fun">
+    <h2>Interactive Fun 🐼</h2>
+  
+    <div>
+      <img class="slide" src="2RP.jpg" style="display:block;max-width:200px;">
+      <img class="slide" src="aegyo.jpg" style="display:none;max-width:200px;">
+      <img class="slide" src="kyah.jpg" style="display:none;max-width:200px;">
+      <img class="slide" src="SURPRISE PANDA.jpg" style="display:none;max-width:200px;">
+    </div>
+    <br>
+    <button onclick="showSlide(slideIndex - 1)">⬅ Prev</button>
+    <button onclick="showSlide(slideIndex + 1)">Next ➡</button>
+  
+    <p id="booPanda" style="display: none; font-weight: bold; color: #ff6f61;">BOO A PANDA</p>
+  
+    <button onclick="changeBg()">Change Background Color</button>
+    <button onclick="showFact()">Show Panda Fact</button>
+    <p id="randomFact" style="font-weight:bold;color:#ff6f61;"></p>
+  
+    <button onclick="likeImage()">❤️ Like</button>
+    <span id="likeCount">0</span>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ for Red Pandas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
